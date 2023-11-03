@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">rule_imprison_android</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="intro_access">禁锢者</string>
+    <string name="request_admin_tip">禁锢着需要使用设备管理器来动态隐藏/显示APP</string>
+    <string name="admin_desc">禁锢者使用此广播监听系统变化</string>
+
+    <string name="lorem_ipsum">
+    </string>
+</resources>
