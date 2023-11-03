@@ -25,3 +25,23 @@
 2. DMS接收到APP(use)被打开后，DMS服务匹配成功，将APP(shopping)暂时禁用
 3. 当我们退出APP(use)或者至为后台时，ALS通知DMS，DMS将APP(shopping)解除禁用
 
+## 如何编译APP
+
+按需自行修改DMS服务逻辑后编译，不提供预编译安装包
+
+## 如何配置APP
+
+- 安装APP后，不要立即运行。
+- 将APP注册为设备Owner，打开开发者选项USB调试，连接电脑，进入adb shell，输入：
+```agsl
+dpm set-active-admin com.imprison.rule_imprison_android/.receivers.ImprisonDeviceAdminReceiver
+```
+注册APP为设备Owner需要满足以下条件：
+
+1. 当前没有其他accounts。
+
+注意：注册很可能会失败，需要在`设置-账号与同步`内删除所有（对，所有）的同步账户，删除后继续。建议把SIM卡也拔掉。另外支付宝也需要卸载，其会干扰Device Owner的设置。
+
+## 鸣谢
+
+谷歌提供的设备管理器和管理者API，让我自己用上了没有购物APP跳转烦恼的安卓手机。
