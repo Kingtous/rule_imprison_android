@@ -2,6 +2,8 @@
 
 本app提供一种思路，利用Android设备管理器Device Owner + 无障碍服务机制，一定程度上阻止摇一摇广告跳转某购物APP或采用WebView降级策略。适用于所有Android设备，无ROOT的广大Android用户。
 
+![](https://ibb.co/7bgNVG5)
+
 ## 背景
 
 随着购物平台双十一打响，各大超大型app也没闲着，加之摇一摇广告盛行，使得购物APP频繁被唤醒。
