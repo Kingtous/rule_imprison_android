@@ -32,6 +32,8 @@
 ## 如何配置APP
 
 - 安装APP后，不要立即运行。
+- 设置APP可自启动，关闭省电策略。虽然APP的DMS服务设置成了保活STICKY，但是还是设置一下吧，不同机型策略不一样。
+- 在`系统设置-设备管理器`中，启用本APP。
 - 将APP注册为设备Owner，打开开发者选项USB调试，连接电脑，进入adb shell，输入：
 ```agsl
 dpm set-active-admin com.imprison.rule_imprison_android/.receivers.ImprisonDeviceAdminReceiver
@@ -41,6 +43,9 @@ dpm set-active-admin com.imprison.rule_imprison_android/.receivers.ImprisonDevic
 1. 当前没有其他accounts。
 
 注意：注册很可能会失败，需要在`设置-账号与同步`内删除所有（对，所有）的同步账户，删除后继续。建议把SIM卡也拔掉。另外支付宝也需要卸载，其会干扰Device Owner的设置。
+
+- 在系统设置-无障碍服务设置中，开启本APP
+- 一切就绪~
 
 ## 鸣谢
 
